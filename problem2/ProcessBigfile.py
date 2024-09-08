@@ -86,4 +86,4 @@ if __name__ == "__main__":
     gs.generate_csv()  # You can adjust the number of rows as needed
     output_file = 'anonymized_dataset.csv'
     aa = Anonymiser(input_file, output_file)
-    aa.anonymize_csv(input_file, output_file)
+    aa.anonymize_csv()
