@@ -43,7 +43,7 @@ class Anonymiser:
     def hash_string(self, field):
         return sha256(field.encode()).hexdigest()
 
-    def anonymize_row(row):
+    def anonymize_row(self, row):
 
         row['first_name'] = hash_string(row['first_name'])
         row['last_name'] = hash_string(row['last_name'])
