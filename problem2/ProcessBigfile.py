@@ -68,7 +68,7 @@ class Anonymiser:
             writer.writeheader()
 
             # Process the first row
-            anonymized_row = anonymize_row(first_row)
+            anonymized_row = self.anonymize_row(first_row)
             writer.writerow(anonymized_row)
 
             # Process the remaining rows
